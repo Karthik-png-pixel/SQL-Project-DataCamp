@@ -17,7 +17,7 @@ avg
 
 
 
-## TASK: Calculate the average life expectancy from the populations table. Filter your answer to use records from 2015 only. Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
+### TASK: Calculate the average life expectancy from the populations table. Filter your answer to use records from 2015 only. Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
 
 
 ## Query
@@ -46,7 +46,7 @@ AND life_expectancy > 1.15 *(SELECT AVG(life_expectancy)FROM populations WHERE y
 
 
 
-## TASK: Return the name, country_code and urbanarea_pop for all capital cities (not aliased)
+### TASK: Return the name, country_code and urbanarea_pop for all capital cities (not aliased)
 
 
 ## Query
