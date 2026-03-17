@@ -17,8 +17,7 @@ avg
 
 
 
-# TASK: Calculate the average life expectancy from the populations table. Filter your answer to use records from 2015 only.
-# Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
+# TASK: Calculate the average life expectancy from the populations table. Filter your answer to use records from 2015 only. Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
 
 
 ## Query
