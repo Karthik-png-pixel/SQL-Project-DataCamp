@@ -2,7 +2,7 @@
 
 
 
-## TASK: Select average life_expectancy from the populations table
+### TASK: Select average life_expectancy from the populations table
 
 ## Query
 ```
