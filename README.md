@@ -1,23 +1,18 @@
+
+
+
 # DataCamp SQL Subquerying Inside WHERE Clauses
 
 
+## Introduction 
+This project demonstrates the use of SQL subqueries within WHERE clauses 
+to filter and extract meaningful insights from relational datasets containing 
+global population, country, and city statistics. Key areas of analysis include 
+urban population size, life expectancy, and fertility rates across
+countries and regions. These queries were written as part of my 
+ongoing SQL training through DataCamp.
 
-### TASK: Select average life_expectancy from the populations table
-
-## Query
-```
-SELECT AVG(life_expectancy)
-FROM populations
--- Filter for the year 2015
-WHERE year = 2015;
-```
-## Result
-avg
-71.6763415481105
-
-
-
-### TASK: Calculate the average life expectancy from the populations table. Filter your answer to use records from 2015 only. Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
+### TASK: Calculate the average life expectancy from the populations table. Filter records to only represent statistics from 2015. Use this calculation to filter populations for all records where life_expectancy is 1.15 times higher than average.
 
 
 ## Query
@@ -28,7 +23,12 @@ WHERE year = 2015
 AND life_expectancy > 1.15 *(SELECT AVG(life_expectancy)FROM populations WHERE year = 2015);
 ```
 
-## Result
+## Results
+
+avg
+71.6763415481105 
+
+
 | pop_id | country_code | year | fertility_rate | life_expectancy | size |
 |:------:|:------------:|:----:|:--------------:|:---------------:|:----:|
 | 21 | AUS | 2015 | 1.833 | 82.45122 | 23789752 |
@@ -46,7 +46,7 @@ AND life_expectancy > 1.15 *(SELECT AVG(life_expectancy)FROM populations WHERE y
 
 
 
-### TASK: Return the name, country_code and urbanarea_pop for all capital cities (not aliased)
+### TASK: Return the name, country_code and urbanarea_pop for all capital cities without using aliases.
 
 
 ## Query
